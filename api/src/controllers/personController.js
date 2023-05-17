@@ -1,10 +1,13 @@
 'use strict';
+require('dotenv').config();
 
 const PersonRepository = require('../repositories/personRepository');
 
+const redisUrl = process.env.REDIS_URL;
+
 var redis = require('redis');
 const client = redis.createClient({
-    host: `${process.env.REDIS_URL}`, 
+    host: redisUrl, 
     port: 6379
   });
 exports.get = (req, res) => {

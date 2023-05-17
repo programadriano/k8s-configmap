@@ -1,5 +1,9 @@
+require('dotenv').config();
+
 var mongoose = require('mongoose');
-mongoose.connect(`${process.env.MONGO_URL}`);
+const mongoUrl = process.env.MONGO_URL;
+
+mongoose.connect(mongoUrl);
 
 var Schema = mongoose.Schema;
 
