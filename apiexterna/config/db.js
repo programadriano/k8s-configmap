@@ -1,7 +1,9 @@
-var mongoose = require('mongoose');
+require('dotenv').config();
 
-//mongoose.connect(`mongodb://127.0.0.1:32000/db_employees`);
-mongoose.connect(`${process.env.MONGO_URL}`);
+var mongoose = require('mongoose');
+const mongoUrl = process.env.MONGO_URL;
+
+mongoose.connect(mongoUrl);
 
 
 var Schema = mongoose.Schema;

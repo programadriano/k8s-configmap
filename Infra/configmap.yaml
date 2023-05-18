@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: minha-api-config
+  name: db-config
 data:
-  MONGO_URL: "mongodb://mongo-nodeport-svc/db_employees"
-  REDIS_URL: "redis-nodeport-svc"
+  MONGO_URL: mongodb://mongo-nodeport-svc/db_employees
+  REDIS_URL: redis-nodeport-svc

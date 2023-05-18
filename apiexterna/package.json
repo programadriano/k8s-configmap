@@ -9,6 +9,14 @@
     "start": "nodemon app.js"
   },
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.22"
-  }
+  },
+  "name": "apiexterna",
+  "version": "1.0.0",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

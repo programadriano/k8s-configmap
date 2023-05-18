@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const personRepository = require('./repositories/personRepository');
 
-app.get('/', (req, res) => {
+app.get('/person', (req, res) => {
     personRepository.getAll()
     .then((person) => {    
         console.log(person)    

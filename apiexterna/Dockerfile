@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-ENV MONGO_URL="uri"
+#ENV MONGO_URL="uri"
 
 COPY . .
 
